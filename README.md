@@ -10,12 +10,12 @@ ________________________________________________________________________________
 ### This directory will be a website where users can input their recipe's collect the information in a database and display it on a referenced paged for every other user to see. 
 _______________________________________________________________________________________________________________________
 ## Technologies Used
-- GitHub
+- [GitHub](https://github.com/SEI-R-1-9/u2_lesson_ERD) 
 - React
 - MongoDB 
-- Trello
-- Draw.io
-- Flowcharts: Lucidchart
+- [Trello](https://trello.com/b/7AUGTiss/recipe-board)
+- [Draw.io](https://app.diagrams.net/#G1u_ApinczDyGlmJSUzy2hf7XcL86MZT8S)
+- [Flowcharts:Lucidchart](https://lucid.app/lucidchart/c7c954a9-dcc8-45c4-8cd3-8d55a3f90663/edit?viewport_loc=-405%2C-57%2C2219%2C1116%2C0_0&invitationId=inv_ae8d7560-6110-4b7b-b3d5-4cfd76d6316d)
 _______________________________________________________________________________________________________________________
 ## Getting Started
 
