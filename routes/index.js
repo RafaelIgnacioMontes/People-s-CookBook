@@ -2,6 +2,8 @@ const { Router } = require('express')
 const controllers = require('../controllers')
 const router = Router()
 
+router.put()
+
 router.get('/', (req, res) => res.send('DB connected!'))
 
 router.post('/recipes', controllers.createRecipe)
