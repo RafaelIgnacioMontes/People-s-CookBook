@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import './App.css'
 import Home from './components/Home'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
+import RecipeForm from './components/RecipeForm'
+
 const App = () => {
   return (
     <div>
@@ -10,8 +13,8 @@ const App = () => {
       </header>
       <main>
         <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/RecipeForm" elemnt={<RecipeForm />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/RecipeForm" element={<RecipeForm />} />
         </Routes>
       </main>
     </div>
