@@ -11,6 +11,7 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/Home" element={<Home />} />
+          <Route path="/RecipeForm" elemnt={<RecipeForm />} />
         </Routes>
       </main>
     </div>

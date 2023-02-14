@@ -52,3 +52,5 @@ const RecipeForm = (props) => {
     </div>
   )
 }
+
+export default RecipeForm
