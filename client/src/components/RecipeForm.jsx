@@ -5,8 +5,6 @@ import axios from 'axios'
 const RecipeForm = (props) => {
   let navigate = useNavigate()
 
-  const [formData, setFormData] = useState({})
-
   const [newRecipe, setNewRecipe] = useState({
     name: '',
     ingredients: '',
