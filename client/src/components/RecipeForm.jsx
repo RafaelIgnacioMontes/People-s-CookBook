@@ -17,8 +17,7 @@ const RecipeForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // props.addRecipe(e)
-    // navigate('/recipes')
+
     axios
       .post('http://localhost:3001/api/recipes', newRecipe)
       .then((response) => {
@@ -28,6 +27,7 @@ const RecipeForm = (props) => {
         console.error(error)
       })
     console.log(newRecipe)
+    navigate('/recipes')
   }
 
   const handleChange = (e) => {

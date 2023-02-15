@@ -15,3 +15,20 @@ body {
   padding: 1em;
   min-height: 2em;
 }
+.recipes {
+  display: flex;
+}
+.RecipeTitle {
+  position: center;
+}
+.navtext {
+  display: flex;
+}
+.links {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.picture {
+  width: 50vw;
+  height: 50vh;
+}
