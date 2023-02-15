@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 
-const RecipeForm = (props) => {
+const RecipeForm = ({ props, getRecipeList }) => {
   let navigate = useNavigate()
 
   const [newRecipe, setNewRecipe] = useState({
@@ -26,6 +26,7 @@ const RecipeForm = (props) => {
       })
     console.log(newRecipe)
     navigate('/recipes')
+    getRecipeList()
   }
 
   const handleChange = (e) => {

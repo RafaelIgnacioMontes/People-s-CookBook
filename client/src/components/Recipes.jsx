@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import UpdateRecipe from './UpdateRecipe'
+import Comment from './Comments'
 
 const Recipes = (response) => {
-  const initialState = [
-    { name: '', ingredients: '', description: '', serving: '', imageUrl: '' }
-  ]
   const [recipeList, setRecipeList] = useState([])
-  const [updateRecipe, setUpdateRecipe] = useState()
 
   const getRecipeList = async () => {
     const response = await axios.get('http://localhost:3001/api/recipes')
@@ -41,6 +38,7 @@ const Recipes = (response) => {
             <div>Serving Size: {recipe.serving}</div>
             <button onClick={() => delRecipe(recipe._id)}>Delete</button>
             <UpdateRecipe getRecipeList={getRecipeList} recipe={recipe} />
+            <Comment getRecipeList={getRecipeList} />
           </div>
         ))}
       </div>

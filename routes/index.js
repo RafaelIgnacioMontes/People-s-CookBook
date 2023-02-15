@@ -14,6 +14,6 @@ router.put('/recipes/:id', controllers.updateRecipe)
 
 router.delete('/recipes/:id', controllers.deleteRecipe)
 
-router.push('/')
+router.post('/comments/:id/comment', controllers.createComment)
 
 module.exports = router
