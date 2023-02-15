@@ -28,7 +28,7 @@ const Recipes = (response) => {
       <h1 className="RecipeTitle">Recipes</h1>
       <div>
         {recipeList.map((recipe) => (
-          <div>
+          <div className="recipecard" key={recipe._id}>
             <div>
               <img src={recipe.imageUrl} className="picture" />
             </div>
@@ -38,7 +38,15 @@ const Recipes = (response) => {
             <div>Serving Size: {recipe.serving}</div>
             <button onClick={() => delRecipe(recipe._id)}>Delete</button>
             <UpdateRecipe getRecipeList={getRecipeList} recipe={recipe} />
-            <Comment getRecipeList={getRecipeList} />
+            <div>
+              {recipe.comments.map((comment) => (
+                <div key={comment._id}>
+                  <h3>User: {comment.user}</h3>
+                  <p>Comment: {comment.comment}</p>
+                </div>
+              ))}
+            </div>
+            <Comment getRecipeList={getRecipeList} recipe={recipe} />
           </div>
         ))}
       </div>

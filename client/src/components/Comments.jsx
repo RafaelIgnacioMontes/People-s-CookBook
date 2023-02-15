@@ -1,25 +1,20 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const Comment = ({ props, getRecipeList, recipe }) => {
+const Comment = ({ getRecipeList, recipe }) => {
   const [newComment, setNewComment] = useState({
     user: '',
     comment: ''
   })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    axios
-      .post(
-        `http://localhost:3001/api/recipes/${recipe._id}/comment`,
-        newComment
-      )
-      .then((props) => {})
-      .catch((error) => {
-        console.error(error)
-      })
-    console.log(newComment)
+    let response = await axios.post(
+      `http://localhost:3001/api/recipes/${recipe._id}/comment`,
+      newComment
+    )
+
     getRecipeList()
   }
   const handleChange = (e) => {
@@ -48,8 +43,8 @@ const Comment = ({ props, getRecipeList, recipe }) => {
           name={'comment'}
           placeholder={'Post your comment here'}
         />
+        <button>Submit</button>
       </form>
-      <button>Submit</button>
     </div>
   )
 }

@@ -5,14 +5,14 @@ const createComment = async (req, res) => {
   try {
     const comment = await new Comment(req.body)
     await comment.save()
-    const recipeFind = await recipe.find(req.params.id)
+    const recipeFind = await Recipe.findById(req.params.id)
     recipeFind.comments.push(comment._id)
     recipeFind.save()
     return res.status(201).json({
       comment
     })
   } catch (error) {
-    return res.status(500).jason({ error: error.message })
+    return res.status(500).json({ error: error.message })
   }
 }
 
