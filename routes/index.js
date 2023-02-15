@@ -13,4 +13,7 @@ router.get('/recipes/:id', controllers.getRecipeById)
 router.put('/recipes/:id', controllers.updateRecipe)
 
 router.delete('/recipes/:id', controllers.deleteRecipe)
+
+router.push('/')
+
 module.exports = router
