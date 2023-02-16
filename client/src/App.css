@@ -12,6 +12,22 @@ body {
 .App {
   text-align: center;
 }
+
+.pepu {
+  font-size: smaller;
+  max-width: 500px;
+  text-align: center;
+  max-height: 500px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: red;
+}
+
+.mainmenu {
+  text-align: center;
+  font-size: 3em;
+}
+
 .headers {
   background-color: #fff;
   border: 5px;
