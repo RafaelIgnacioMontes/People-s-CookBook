@@ -42,8 +42,12 @@ const Recipes = (response) => {
                       Instructions: {recipe.description}
                     </div>
                     <div>Serving Size: {recipe.serving}</div>
-                    <button onClick={() => delRecipe(recipe._id)}>
-                      Delete
+                    <button
+                      onClick={() => delRecipe(recipe._id)}
+                      className="recipebutton"
+                    >
+                      {' '}
+                      <span>Delete</span>
                     </button>
                     <UpdateRecipe
                       getRecipeList={getRecipeList}
@@ -76,8 +80,11 @@ const Recipes = (response) => {
                       Instructions: {recipe.description}
                     </div>
                     <div>Serving Size: {recipe.serving}</div>
-                    <button onClick={() => delRecipe(recipe._id)}>
-                      Delete
+                    <button
+                      onClick={() => delRecipe(recipe._id)}
+                      className="recipebutton"
+                    >
+                      <span>Delete</span>
                     </button>
                     <UpdateRecipe
                       getRecipeList={getRecipeList}
