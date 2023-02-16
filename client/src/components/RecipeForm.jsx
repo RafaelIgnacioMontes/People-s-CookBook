@@ -38,9 +38,9 @@ const RecipeForm = ({ props, getRecipeList }) => {
   }
 
   return (
-    <div>
-      <h1>Lets try your recipe!</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="createformdiv">
+      <h1 className="createformheader">Lets try your recipe!</h1>
+      <form onSubmit={handleSubmit} className="createformform">
         <input
           type="text"
           value={newRecipe.name}
@@ -55,7 +55,8 @@ const RecipeForm = ({ props, getRecipeList }) => {
           name={'ingredients'}
           placeholder={'List your ingredients here'}
         />
-        <input
+        <textarea
+          className="textareatext"
           type="text"
           value={newRecipe.description}
           onChange={handleChange}
