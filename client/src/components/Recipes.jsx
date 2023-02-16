@@ -36,8 +36,10 @@ const Recipes = (response) => {
                     <div>
                       <img src={recipe.imageUrl} className="picture" />
                     </div>
-                    <div>{recipe.name}</div>
-                    <div>Ingredients: {recipe.ingredients}</div>
+                    <div className="rname">{recipe.name}</div>
+                    <div className="ringredients">
+                      Ingredients: {recipe.ingredients}
+                    </div>
                     <div className="description">
                       Instructions: {recipe.description}
                     </div>
@@ -53,6 +55,8 @@ const Recipes = (response) => {
                       getRecipeList={getRecipeList}
                       recipe={recipe}
                     />
+
+                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
                     <div>
                       {recipe.comments.map((comment) => (
                         <div key={comment._id}>
@@ -61,7 +65,6 @@ const Recipes = (response) => {
                         </div>
                       ))}
                     </div>
-                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
                   </div>
                 )
             )}
@@ -90,6 +93,8 @@ const Recipes = (response) => {
                       getRecipeList={getRecipeList}
                       recipe={recipe}
                     />
+
+                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
                     <div>
                       {recipe.comments.map((comment) => (
                         <div key={comment._id}>
@@ -98,7 +103,6 @@ const Recipes = (response) => {
                         </div>
                       ))}
                     </div>
-                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
                   </div>
                 )
             )}

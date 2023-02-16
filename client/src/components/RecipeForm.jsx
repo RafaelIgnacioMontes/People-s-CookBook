@@ -56,7 +56,7 @@ const RecipeForm = ({ props, getRecipeList }) => {
           placeholder={'List your ingredients here'}
         />
         <input
-          type="text-area"
+          type="text"
           value={newRecipe.description}
           onChange={handleChange}
           name={'description'}
@@ -76,7 +76,7 @@ const RecipeForm = ({ props, getRecipeList }) => {
           name={'imageUrl'}
           placeholder={'url for an image for your recipe here'}
         />
-        <button>Submit</button>
+        <button className="submitbutton">Submit</button>
       </form>
     </div>
   )

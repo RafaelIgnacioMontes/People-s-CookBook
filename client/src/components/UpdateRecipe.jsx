@@ -15,7 +15,7 @@ const UpdateRecipe = ({ recipe, getRecipeList }) => {
 
   const updateRecipeCall = async (e) => {
     e.preventDefault()
-    const response = await axios.put(
+    await axios.put(
       `http://localhost:3001/api/recipes/${recipe._id}`,
       recipeUpdate
     )
@@ -25,7 +25,7 @@ const UpdateRecipe = ({ recipe, getRecipeList }) => {
 
   return (
     <div>
-      <p>RecipeUpdate</p>
+      <p>Update your Recipe</p>
       <form onSubmit={updateRecipeCall}>
         <input
           onChange={handleChange}
@@ -41,10 +41,9 @@ const UpdateRecipe = ({ recipe, getRecipeList }) => {
           value={recipeUpdate.ingredients}
           placeholder="Update Recipe Name"
         />
-        <textarea
-          className="box"
+        <input
           onChange={handleChange}
-          type="textarea"
+          type="text"
           name="description"
           value={recipeUpdate.description}
           placeholder="Update Recipe Name"

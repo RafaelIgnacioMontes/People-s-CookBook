@@ -14,7 +14,6 @@ const Comment = ({ getRecipeList, recipe }) => {
       `http://localhost:3001/api/recipes/${recipe._id}/comment`,
       newComment
     )
-
     getRecipeList()
   }
   const handleChange = (e) => {
@@ -27,7 +26,7 @@ const Comment = ({ getRecipeList, recipe }) => {
 
   return (
     <div>
-      <h1>Comments</h1>
+      <h2>Comments</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
