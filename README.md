@@ -28,3 +28,5 @@ The project itself was deployed and can be viewed [here](https://github.com/Rafa
 _________________________________________________________________________________________________________________________
 ## Final project
 App is fully functional and is able to get all recipes in the database as well as create new ones. You will be able to update the recipes and delete the ones with the button. 
+
+![The People's Cook Book!]((https://imgur.com/a/QqyCKyi))
