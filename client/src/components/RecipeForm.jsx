@@ -10,7 +10,7 @@ const RecipeForm = ({ props, getRecipeList }) => {
     ingredients: '',
     description: '',
     serving: '',
-    img: ''
+    imageUrl: ''
   })
 
   const handleSubmit = (e) => {
@@ -71,9 +71,9 @@ const RecipeForm = ({ props, getRecipeList }) => {
         />
         <input
           type="text"
-          value={newRecipe.img}
+          value={newRecipe.imageUrl}
           onChange={handleChange}
-          name={'img'}
+          name={'imageUrl'}
           placeholder={'url for an image for your recipe here'}
         />
         <button>Submit</button>

@@ -25,30 +25,78 @@ const Recipes = (response) => {
   console.log(recipeList)
   return (
     <div className="recipes">
-      <h1 className="RecipeTitle">Recipes</h1>
       <div>
-        {recipeList.map((recipe) => (
-          <div className="recipecard" key={recipe._id}>
-            <div>
-              <img src={recipe.imageUrl} className="picture" />
-            </div>
-            <div>{recipe.name}</div>
-            <div>Ingredients: {recipe.ingredients}</div>
-            <div>Instructions: {recipe.description}</div>
-            <div>Serving Size: {recipe.serving}</div>
-            <button onClick={() => delRecipe(recipe._id)}>Delete</button>
-            <UpdateRecipe getRecipeList={getRecipeList} recipe={recipe} />
-            <div>
-              {recipe.comments.map((comment) => (
-                <div key={comment._id}>
-                  <h3>User: {comment.user}</h3>
-                  <p>Comment: {comment.comment}</p>
-                </div>
-              ))}
-            </div>
-            <Comment getRecipeList={getRecipeList} recipe={recipe} />
+        <h1 className="RecipeTitle">Recipes</h1>{' '}
+        <div className="recipecard">
+          <div className="column1">
+            {recipeList.map(
+              (recipe, index) =>
+                index % 2 == 0 && (
+                  <div className="thewholecard" key={recipe._id}>
+                    <div>
+                      <img src={recipe.imageUrl} className="picture" />
+                    </div>
+                    <div>{recipe.name}</div>
+                    <div>Ingredients: {recipe.ingredients}</div>
+                    <div className="description">
+                      Instructions: {recipe.description}
+                    </div>
+                    <div>Serving Size: {recipe.serving}</div>
+                    <button onClick={() => delRecipe(recipe._id)}>
+                      Delete
+                    </button>
+                    <UpdateRecipe
+                      getRecipeList={getRecipeList}
+                      recipe={recipe}
+                    />
+                    <div>
+                      {recipe.comments.map((comment) => (
+                        <div key={comment._id}>
+                          <h3>User: {comment.user}</h3>
+                          <p>Comment: {comment.comment}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
+                  </div>
+                )
+            )}
           </div>
-        ))}
+          <div className="column2">
+            {recipeList.map(
+              (recipe, index) =>
+                index % 2 != 0 && (
+                  <div className="thewholecard" key={recipe._id}>
+                    <div>
+                      <img src={recipe.imageUrl} className="picture" />
+                    </div>
+                    <div>{recipe.name}</div>
+                    <div>Ingredients: {recipe.ingredients}</div>
+                    <div className="description">
+                      Instructions: {recipe.description}
+                    </div>
+                    <div>Serving Size: {recipe.serving}</div>
+                    <button onClick={() => delRecipe(recipe._id)}>
+                      Delete
+                    </button>
+                    <UpdateRecipe
+                      getRecipeList={getRecipeList}
+                      recipe={recipe}
+                    />
+                    <div>
+                      {recipe.comments.map((comment) => (
+                        <div key={comment._id}>
+                          <h3>User: {comment.user}</h3>
+                          <p>Comment: {comment.comment}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <Comment getRecipeList={getRecipeList} recipe={recipe} />
+                  </div>
+                )
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
