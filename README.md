@@ -24,3 +24,7 @@ In the main page of the website the user will be able to input their name, recip
 A trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/7AUGTiss/recipe-board).
 
 The project itself was deployed and can be viewed [here](https://github.com/RafaelIgnacioMontes/People-s-CookBook).
+
+_________________________________________________________________________________________________________________________
+## Final project
+App is fully functional and is able to get all recipes in the database as well as create new ones. You will be able to update the recipes and delete the ones with the button. 
