@@ -18,13 +18,10 @@ const RecipeForm = ({ props, getRecipeList }) => {
 
     axios
       .post('http://localhost:3001/api/recipes', newRecipe)
-      .then((response) => {
-        console.log(response.data)
-      })
+      .then((response) => {})
       .catch((error) => {
         console.error(error)
       })
-    console.log(newRecipe)
     navigate('/recipes')
     getRecipeList()
   }

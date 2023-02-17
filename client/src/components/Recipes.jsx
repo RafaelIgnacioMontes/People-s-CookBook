@@ -46,26 +46,26 @@ const Recipes = (response) => {
                       </div>
                       <div>Serving Size: {recipe.serving}</div>
                     </div>
-                    <button
-                      onClick={() => delRecipe(recipe._id)}
-                      className="recipebutton"
-                    >
-                      {' '}
-                      <span>Delete</span>
-                    </button>
+
                     <UpdateRecipe
                       getRecipeList={getRecipeList}
                       recipe={recipe}
                     />
 
                     <Comment getRecipeList={getRecipeList} recipe={recipe} />
-                    <div className="commentarea">
+                    <div>
                       {recipe.comments.map((comment) => (
-                        <div key={comment._id}>
+                        <div className="commentarea" key={comment._id}>
                           <h3>User: {comment.user}</h3>
                           <p>Comment: {comment.comment}</p>
                         </div>
                       ))}
+                      <button
+                        onClick={() => delRecipe(recipe._id)}
+                        className="recipedeletebutton"
+                      >
+                        <span>Delete</span>
+                      </button>
                     </div>
                   </div>
                 )
@@ -87,12 +87,7 @@ const Recipes = (response) => {
                       </div>
                       <div>Serving Size: {recipe.serving}</div>
                     </div>
-                    <button
-                      onClick={() => delRecipe(recipe._id)}
-                      className="recipebutton"
-                    >
-                      <span>Delete</span>
-                    </button>
+
                     <UpdateRecipe
                       getRecipeList={getRecipeList}
                       recipe={recipe}
@@ -101,11 +96,17 @@ const Recipes = (response) => {
                     <Comment getRecipeList={getRecipeList} recipe={recipe} />
                     <div>
                       {recipe.comments.map((comment) => (
-                        <div key={comment._id}>
+                        <div key={comment._id} className="commentarea">
                           <h3>User: {comment.user}</h3>
                           <p>Comment: {comment.comment}</p>
                         </div>
                       ))}
+                      <button
+                        onClick={() => delRecipe(recipe._id)}
+                        className="recipedeletebutton"
+                      >
+                        <span>Delete</span>
+                      </button>
                     </div>
                   </div>
                 )
