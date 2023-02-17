@@ -29,4 +29,4 @@ ________________________________________________________________________________
 ## Final project
 App is fully functional and is able to get all recipes in the database as well as create new ones. You will be able to update the recipes and delete the ones with the button. 
 
-![The People's Cook Book!](https://imgur.com/a/QqyCKyi)
+![The People's Cook Book!](https://cdn.discordapp.com/attachments/1075524186853867702/1076200994863587338/Screenshot_from_2023-02-17_10-58-20.png)
