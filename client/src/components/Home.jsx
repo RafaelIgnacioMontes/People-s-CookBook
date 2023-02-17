@@ -1,6 +1,7 @@
 const Home = () => {
   return (
     <div className="home">
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <div className="mainmenu">
         People's Cook Book
         <p className="pepu">
