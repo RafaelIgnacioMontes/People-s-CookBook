@@ -186,6 +186,21 @@ input[type='text'] {
   background-color: yellowgreen;
 }
 
+.commentsubmit {
+  position: relative;
+  background-color: #4caf50;
+  border: none;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 20px;
+  width: 75px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .textareatext {
   padding: 10px;
   margin: 10px 10px;
