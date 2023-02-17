@@ -55,7 +55,9 @@ const UpdateRecipe = ({ recipe, getRecipeList }) => {
           value={recipeUpdate.serving}
           placeholder="Update Recipe Name"
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="updatebutton">
+          Submit
+        </button>
       </form>
     </div>
   )
