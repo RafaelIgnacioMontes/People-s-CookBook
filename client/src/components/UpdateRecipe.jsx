@@ -3,8 +3,6 @@ import axios from 'axios'
 const UpdateRecipe = ({ recipe, getRecipeList }) => {
   const [recipeUpdate, setRecipeUpdate] = useState(recipe)
 
-  console.log(recipeUpdate)
-
   const handleChange = (e) => {
     const { name, value } = e.target
     setRecipeUpdate((recipeUpdate) => ({

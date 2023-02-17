@@ -8,21 +8,18 @@ const Recipes = (response) => {
 
   const getRecipeList = async () => {
     const response = await axios.get('http://localhost:3001/api/recipes')
-    console.log(response)
     setRecipeList(response.data.recipes)
   }
   const delRecipe = async (recipeId) => {
     const response = await axios.delete(
       `http://localhost:3001/api/recipes/${recipeId}`
     )
-    console.log(response)
     getRecipeList()
   }
 
   useEffect(() => {
     getRecipeList()
   }, [])
-  console.log(recipeList)
   return (
     <div className="recipes">
       <div>
