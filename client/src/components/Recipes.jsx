@@ -36,14 +36,16 @@ const Recipes = (response) => {
                     <div>
                       <img src={recipe.imageUrl} className="picture" />
                     </div>
-                    <div className="rname">{recipe.name}</div>
-                    <div className="ringredients">
-                      Ingredients: {recipe.ingredients}
+                    <div className="bodytext">
+                      <div className="rname">{recipe.name}</div>
+                      <div className="ringredients">
+                        Ingredients: {recipe.ingredients}
+                      </div>
+                      <div className="description">
+                        Instructions: {recipe.description}
+                      </div>
+                      <div>Serving Size: {recipe.serving}</div>
                     </div>
-                    <div className="description">
-                      Instructions: {recipe.description}
-                    </div>
-                    <div>Serving Size: {recipe.serving}</div>
                     <button
                       onClick={() => delRecipe(recipe._id)}
                       className="recipebutton"
@@ -77,12 +79,14 @@ const Recipes = (response) => {
                     <div>
                       <img src={recipe.imageUrl} className="picture" />
                     </div>
-                    <div>{recipe.name}</div>
-                    <div>Ingredients: {recipe.ingredients}</div>
-                    <div className="description">
-                      Instructions: {recipe.description}
+                    <div className="bodytext">
+                      <div>{recipe.name}</div>
+                      <div>Ingredients: {recipe.ingredients}</div>
+                      <div className="description">
+                        Instructions: {recipe.description}
+                      </div>
+                      <div>Serving Size: {recipe.serving}</div>
                     </div>
-                    <div>Serving Size: {recipe.serving}</div>
                     <button
                       onClick={() => delRecipe(recipe._id)}
                       className="recipebutton"
