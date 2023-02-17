@@ -42,7 +42,7 @@ const Comment = ({ getRecipeList, recipe }) => {
           name={'comment'}
           placeholder={'Post your comment here'}
         />
-        <button>Submit</button>
+        <button className="commentsubmit">Submit</button>
       </form>
     </div>
   )

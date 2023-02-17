@@ -188,7 +188,7 @@ input[type='text'] {
 
 .commentsubmit {
   position: relative;
-  background-color: #4caf50;
+  background-color: #a12e0a;
   border: none;
   font-size: 10px;
   color: #ffffff;
@@ -211,6 +211,12 @@ input[type='text'] {
   margin-top: -120%;
   opacity: 0;
   transition: all 0.8s;
+}
+.commentsubmit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .textareatext {
