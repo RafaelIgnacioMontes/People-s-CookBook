@@ -16,6 +16,15 @@ body {
   text-align: center;
 }
 
+.commentarea {
+  background-color: #da846a;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  font-size: smaller;
+  padding: 5px;
+}
+
 .pepu {
   font-size: smaller;
   max-width: 500px;
@@ -174,6 +183,7 @@ input[type='text'] {
   padding: 10px;
   margin-bottom: 10px;
   min-height: 1000px;
+  background-color: yellowgreen;
 }
 
 .textareatext {

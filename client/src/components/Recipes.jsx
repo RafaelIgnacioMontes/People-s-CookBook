@@ -57,7 +57,7 @@ const Recipes = (response) => {
                     />
 
                     <Comment getRecipeList={getRecipeList} recipe={recipe} />
-                    <div>
+                    <div className="commentarea">
                       {recipe.comments.map((comment) => (
                         <div key={comment._id}>
                           <h3>User: {comment.user}</h3>
