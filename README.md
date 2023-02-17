@@ -10,7 +10,7 @@ ________________________________________________________________________________
 ### This directory will be a website where users can input their recipe's collect the information in a database and display it on a referenced paged for every other user to see. 
 _______________________________________________________________________________________________________________________
 ## Technologies Used
-- [GitHub](https://github.com/SEI-R-1-9/u2_lesson_ERD) 
+- [GitHub](https://github.com/RafaelIgnacioMontes/People-s-CookBook) 
 - React
 - MongoDB 
 - [Trello](https://trello.com/b/7AUGTiss/recipe-board)
