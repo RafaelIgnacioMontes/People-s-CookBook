@@ -14,8 +14,8 @@ ________________________________________________________________________________
 - React
 - MongoDB 
 - [Trello](https://trello.com/b/7AUGTiss/recipe-board)
-- [Draw.io](https://app.diagrams.net/#G1u_ApinczDyGlmJSUzy2hf7XcL86MZT8S)
-- [Flowcharts:Lucidchart](https://lucid.app/lucidchart/c7c954a9-dcc8-45c4-8cd3-8d55a3f90663/edit?viewport_loc=-405%2C-57%2C2219%2C1116%2C0_0&invitationId=inv_ae8d7560-6110-4b7b-b3d5-4cfd76d6316d)
+- [Flowcharts:Lucidchart](https://lucid.app/lucidchart/2456a307-c753-49a7-bfce-095dbc595263/edit?viewport_loc=-111%2C-253%2C2219%2C1116%2C0_0&invitationId=inv_cbe6c782-a76a-49a6-8a9f-e77ed4f7f53d)(ERD)
+- [Flowcharts:Lucidchart](https://lucid.app/lucidchart/c7c954a9-dcc8-45c4-8cd3-8d55a3f90663/edit?viewport_loc=-405%2C-537%2C2219%2C1116%2C0_0&invitationId=inv_ae8d7560-6110-4b7b-b3d5-4cfd76d6316d)(Component Hierarchy Diagram)
 _______________________________________________________________________________________________________________________
 ## Getting Started
 
