@@ -22,7 +22,7 @@ const Recipes = (response) => {
   }, [])
   return (
     <div className="recipes">
-      <div>
+      <div className="backgroundrecipe">
         <h1 className="RecipeTitle">Recipes</h1>{' '}
         <div className="recipecard">
           <div className="column1">

@@ -73,6 +73,10 @@ body {
   margin: 5px;
 }
 
+.backgroundrecipe {
+  background-color: aquamarine;
+}
+
 .bodytext {
   background-color: #da846a;
   padding: 3px;

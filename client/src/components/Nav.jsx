@@ -3,7 +3,7 @@ import '../App.css'
 const Nav = () => {
   return (
     <nav className="navbar">
-      <h4>People's Cookbook</h4>
+      <h4>People's Cook book</h4>
       <div className="navtext">
         <div className="links">
           <NavLink to="/">Home</NavLink>
